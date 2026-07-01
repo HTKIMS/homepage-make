@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>작은숲건축사사무소</title>
+
   <style>
     * {
       box-sizing: border-box;
@@ -39,7 +40,7 @@
     nav {
       position: sticky;
       top: 0;
-      background: rgba(255, 255, 255, 0.94);
+      background: rgba(255, 255, 255, 0.95);
       border-top: 1px solid #ddd;
       border-bottom: 1px solid #ddd;
       text-align: center;
@@ -55,7 +56,7 @@
     }
 
     section {
-      max-width: 1080px;
+      max-width: 1120px;
       margin: 0 auto;
       padding: 72px 24px;
     }
@@ -64,7 +65,6 @@
       margin: 0 0 28px;
       font-size: 28px;
       font-weight: 500;
-      letter-spacing: -0.5px;
     }
 
     .intro {
@@ -75,13 +75,21 @@
 
     .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 28px;
     }
 
     .project {
       background: white;
       border: 1px solid #ddd;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
     }
 
     .image-placeholder {
@@ -118,7 +126,7 @@
     }
 
     .contact-inner {
-      max-width: 1080px;
+      max-width: 1120px;
       margin: 0 auto;
     }
 
@@ -136,12 +144,21 @@
     }
 
     @media (max-width: 600px) {
+      header {
+        padding: 80px 20px 70px;
+      }
+
       header h1 {
         font-size: 32px;
       }
 
       nav a {
         margin: 0 8px;
+        font-size: 14px;
+      }
+
+      section {
+        padding: 56px 20px;
       }
     }
   </style>
@@ -172,29 +189,85 @@
     <h2>프로젝트</h2>
 
     <div class="projects">
-      <div class="project">
+      <a class="project" href="project01.html">
         <div class="image-placeholder">Project Image 01</div>
         <div class="project-text">
           <h3>프로젝트 01</h3>
-          <p>완료된 프로젝트 설명을 입력하세요. 위치, 용도, 규모 등을 간단히 적을 수 있습니다.</p>
+          <p>완료 프로젝트 설명을 입력하세요.</p>
         </div>
-      </div>
+      </a>
 
-      <div class="project">
+      <a class="project" href="project02.html">
         <div class="image-placeholder">Project Image 02</div>
         <div class="project-text">
           <h3>프로젝트 02</h3>
-          <p>완료된 프로젝트 설명을 입력하세요. 사진이 준비되면 이 영역을 실제 이미지로 교체할 수 있습니다.</p>
+          <p>완료 프로젝트 설명을 입력하세요.</p>
         </div>
-      </div>
+      </a>
 
-      <div class="project">
+      <a class="project" href="project03.html">
         <div class="image-placeholder">Project Image 03</div>
         <div class="project-text">
           <h3>프로젝트 03</h3>
-          <p>완료된 순서대로 프로젝트를 계속 추가하면 됩니다.</p>
+          <p>완료 프로젝트 설명을 입력하세요.</p>
         </div>
-      </div>
+      </a>
+
+      <a class="project" href="project04.html">
+        <div class="image-placeholder">Project Image 04</div>
+        <div class="project-text">
+          <h3>프로젝트 04</h3>
+          <p>완료 프로젝트 설명을 입력하세요.</p>
+        </div>
+      </a>
+
+      <a class="project" href="project05.html">
+        <div class="image-placeholder">Project Image 05</div>
+        <div class="project-text">
+          <h3>프로젝트 05</h3>
+          <p>완료 프로젝트 설명을 입력하세요.</p>
+        </div>
+      </a>
+
+      <a class="project" href="project06.html">
+        <div class="image-placeholder">Project Image 06</div>
+        <div class="project-text">
+          <h3>프로젝트 06</h3>
+          <p>완료 프로젝트 설명을 입력하세요.</p>
+        </div>
+      </a>
+
+      <a class="project" href="project07.html">
+        <div class="image-placeholder">Project Image 07</div>
+        <div class="project-text">
+          <h3>프로젝트 07</h3>
+          <p>완료 프로젝트 설명을 입력하세요.</p>
+        </div>
+      </a>
+
+      <a class="project" href="project08.html">
+        <div class="image-placeholder">Project Image 08</div>
+        <div class="project-text">
+          <h3>프로젝트 08</h3>
+          <p>완료 프로젝트 설명을 입력하세요.</p>
+        </div>
+      </a>
+
+      <a class="project" href="project09.html">
+        <div class="image-placeholder">Project Image 09</div>
+        <div class="project-text">
+          <h3>프로젝트 09</h3>
+          <p>완료 프로젝트 설명을 입력하세요.</p>
+        </div>
+      </a>
+
+      <a class="project" href="project10.html">
+        <div class="image-placeholder">Project Image 10</div>
+        <div class="project-text">
+          <h3>프로젝트 10</h3>
+          <p>완료 프로젝트 설명을 입력하세요.</p>
+        </div>
+      </a>
     </div>
   </section>
 
@@ -203,7 +276,7 @@
       <h2>연락처</h2>
       <p>주소: 강원특별자치도 춘천시 후석로 462번길 7 416호</p>
       <p>전화: 070-4109-1474</p>
-      <p>이메일: 이메일 주소를 입력하세요</p>
+      <p>이메일: kht5601@naver.com</p>
     </div>
   </section>
 
